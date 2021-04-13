@@ -1,0 +1,30 @@
+
+
+
+<html>
+<head>
+<title>replaceChild</title>
+<script type="text/javascript">
+function replaceit(){
+
+var theoriginal = document.getElementById('ori');
+
+var thereplacement = document.createElement('p');
+
+thereplacement.appendChild(document.createTextNode('Replacement Text'));
+
+theoriginal.replaceChild(thereplacement, theoriginal.lastChild);
+
+}
+</script>
+</head>
+
+<body>
+
+
+<p id="ori">Original Text</p>
+<input type="button" value="click" onclick="replaceit()">
+
+
+</body>
+</html>
